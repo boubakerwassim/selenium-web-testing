@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Web Testing Suite" parallel="false">
+    <!-- You can override at runtime:
+         mvn test -Dheadless=true
+         mvn test -DtimeoutSeconds=15
+         mvn test -DbaseUrl=https://the-internet.herokuapp.com
+    -->
+
+    <parameter name="baseUrl" value="https://the-internet.herokuapp.com"/>
+
+    <test name="UI Tests">
+        <classes>
+            <class name="com.example.tests.GoogleSearchTest"/>
+            <class name="com.example.tests.LoginTest"/>
+            <class name="com.example.tests.FormValidationTest"/>
+        </classes>
+    </test>
+</suite>
+
