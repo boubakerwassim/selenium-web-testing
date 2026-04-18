@@ -42,7 +42,7 @@ public final class DriverFactory {
         }
 
         options.addArguments("--disable-gpu");
-        options.addArguments("--window-size=1366,768");
+        options.addArguments("--window-size=1000,768");
         options.addArguments("--no-sandbox");
         options.addArguments("--disable-dev-shm-usage");
 
